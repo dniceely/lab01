@@ -1,6 +1,5 @@
-#ifndef _ARRAY_HELPERS_H_
-#define _ARRAY_HELPERS_H_
-
+#ifndef arrayhelpers
+#define arrayhelpers
 #include "mybool.h"
 
 unsigned int array_from_file(int array[],
@@ -11,7 +10,4 @@ void array_dump(int a[], unsigned int length);
 
 mybool array_is_sorted(int a[], unsigned int length);
 
-void array_swap(int a[], unsigned int i, unsigned int j);
-
 #endif
-

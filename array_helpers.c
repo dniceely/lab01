@@ -70,16 +70,3 @@ mybool array_is_sorted(int a[], unsigned int length) {
     
 return res_parcial;
 }
-
-void array_swap(int a[], unsigned int i, unsigned int j){
-    int swap = 0;
-    while (i < j)
-    {
-        swap = a[i];
-        a[i] = a[j];
-        a[j] = swap;
-        i = i +1;
-        j = j -1;
-    }
-    
- }

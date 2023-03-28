@@ -54,8 +54,7 @@ int main(int argc, char *argv[]) {
     
     /* parse the file to fill the array and obtain the actual length */
     unsigned int length = array_from_file(array, MAX_SIZE, filepath);
-
-    array_swap(array,0,length-1);
+    
     /*dumping the array*/
     array_dump(array, length);
     if (array_is_sorted(array, length) == true)
