@@ -1,6 +1,6 @@
 #include "array_helpers.h"
 #include <stdio.h>
-#include "mybool.h"
+#include <stdbool.h>
 #include <stdlib.h>
 
 unsigned int array_from_file(int array[],
@@ -54,8 +54,8 @@ void array_dump(int a[], unsigned int length) {
     }
 }
 
-mybool array_is_sorted(int a[], unsigned int length) {
-    mybool res_parcial = true;
+bool array_is_sorted(int a[], unsigned int length) {
+    bool res_parcial = true;
     for (unsigned int i = 0; i < length-1; i++)
     {
         if (a[i] <= a[i+1])
@@ -70,16 +70,3 @@ mybool array_is_sorted(int a[], unsigned int length) {
     
 return res_parcial;
 }
-
-void array_swap(int a[], unsigned int i, unsigned int j){
-    int swap = 0;
-    while (i < j)
-    {
-        swap = a[i];
-        a[i] = a[j];
-        a[j] = swap;
-        i = i +1;
-        j = j -1;
-    }
-    
- }
